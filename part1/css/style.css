@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #1c1d1f;
+  color: gainsboro;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 15px;
+  border-bottom: 2px solid white;
+  border-radius: 0px 0px 15px 15px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .mobileMenu {
+  display: flex;
+  align-items: center;
+}
+header nav .mobileMenu img {
+  width: 30px;
+}
+header nav a.link {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 15px;
+}
+header nav a.link:hover {
+  border: 1px solid white;
+}
+header nav a.brand {
+  color: white;
+  text-decoration: none;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navLinks {
+  display: none;
+  flex: auto;
+}
+
+#mySidenav a.link {
+  margin: 3px 10px 3px 10px;
+}
+
+#videoBackground {
+  display: none;
+}
+
+#videoBackgroundMobile {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#underVideo {
+  margin-top: 100vh;
+}
+
+.schedule {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 30;
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.schedule div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 15px 25px;
+}
+.schedule div span {
+  margin: 10px 0px;
+}
+
+.testimonials {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.FAQ {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.data {
+  position: relative;
+  z-index: 10;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 15px;
+}
+.data h1 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+.data p {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  display: flex;
+  align-items: center;
+}
+.data p .icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.FAQ {
+  margin: 0px 20px 0px 20px;
+  padding-bottom: 100px;
+}
+.FAQ .faqBlock .faqTitle {
+  display: flex;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 15px 15px 0px 0px;
+  padding: 15px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: space-between;
+}
+.FAQ .faqBlock .faqTitle .faqButton {
+  font-size: 22px;
+  margin-right: 10px;
+}
+.FAQ .faqBlock .faqAnswer {
+  padding: 15px;
+  border: 1px solid white;
+  display: block;
+  width: 100%;
+  border-top-width: 0;
+  border-radius: 0px 0px 15px 15px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  padding: 15px 0px;
+  border-top: 2px solid white;
+  border-radius: 15px;
+  color: white;
+}
+footer div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  color: black;
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 14px;
+  transition: 0.5s;
+}
+footer div .hoverBackground {
+  position: absolute;
+  transform: translate(-100%, 100%) rotateZ(45deg);
+  transition: 0s;
+  width: 50px;
+  height: 50px;
+  transition-delay: 0.5s;
+}
+footer div .hoverBackgroundCircle {
+  position: absolute;
+  background-color: white;
+  transition: 0.5s;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+footer div:hover {
+  color: white !important;
+  font-size: 20px;
+}
+footer div:hover .hoverBackground {
+  transition-delay: 0s;
+  transition: 0.5s;
+  transform: translate(0%, 0%) rotateZ(45deg);
+}
+footer div:hover .hoverBackgroundCircle {
+  transition: 0s;
+  width: 0px;
+  height: 0px;
+}
+footer div i {
+  position: relative;
+}
+footer .socialMediaIcons {
+  width: 40%;
+}
+
+#facebookIcon .hoverBackground {
+  background-color: #4267B2;
+}
+
+#instagramIcon .hoverBackground {
+  background-color: #E1306C;
+}
+
+#pinterestIcon .hoverBackground {
+  background-color: #E60023;
+}
+
+#tumblrIcon .hoverBackground {
+  background-color: #34526f;
+}
+
+@media (min-width: 768px) {
+  #videoBackground {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+  }
+
+  #videoBackgroundMobile {
+    display: none;
+  }
+
+  .navLinks {
+    display: block;
+  }
+
+  #mySwiper {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

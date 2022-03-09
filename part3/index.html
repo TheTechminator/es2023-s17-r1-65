@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<div>
+
+    <textarea name="vipTitle" id="vipTitle" cols="30" rows="1">VIP List</textarea>
+
+    <div id="fullScreenArea">
+        <div id="btFullscreen"><i class="fa fa-expand"></i></div>
+
+        <div class="grid-container" id="target" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)" >
+
+        </div>
+    </div>
+
+    <div class="controlButtons">
+        <button id="btLoadSample">Load Sample</button>
+        <!--input type="file" id="inputFile" name="inputFile"-->
+        <button id="btLoadFile">Load file</button>
+        <button id="btExporting">Exporting</button>
+    </div>
+
+    <div class="dialog" id="fileDragDialog" style="display: none;">
+        <div id="fileDropZone" ondrop="fileDropHandler(event);" ondragover="fileDragOverHandler(event);" ondragleave="fileDragLeaveHandler(event);">
+            Drag your file here
+        </div>
+    </div>
+
+    <div class="dialog" id="exportDialog" style="display: none;">
+        <div>
+            <button id="btCopyToClipboard">Copy to clipboard</button>
+            <button id="btDownload">Download</button>
+        </div>
+    </div>
+
+    <div class="dialog" id="copySuccessDialog" style="display: none;">
+        <div>
+            Copied!
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+    <script>
+        btLoadFile.addEventListener("click", (e) => {
+            fileDragDialog.style = "";
+        });
+    </script>
+</body>
+</html>

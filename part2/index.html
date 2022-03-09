@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/SwiperMenuStyle.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="" class="brand">PopFest in the Castle</a>
+
+            <div class="navLinks">
+                <a href="#javascript:void(0)" class="link" id="btConcertScheduleWeb">Schedule</a>
+                <a href="#purchaseTickets" class="link">Purchase tickets</a>
+                <a href="#testimonialsSection" class="link">Testimonials</a>
+                <a href="#artistsSection" class="link">Artists</a>
+                <a href="#budacastleSection1" class="link">Buda Castle</a>
+                <a href="#faqSection" class="link">FAQ</a>
+            </div>
+
+            <div id="mySwiper" class="d-md-none">
+                <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn">&times;</a>
+        
+                        <a href="#javascript:void(0)" class="link"  id="btConcertScheduleMobile">Schedule</a>
+                        <a href="#purchaseTickets" class="link">Purchase tickets</a>
+                        <a href="#testimonialsSection" class="link">Testimonials</a>
+                        <a href="#artistsSection" class="link">Artists</a>
+                        <a href="#budacastleSection1" class="link">Buda Castle</a>
+                        <a href="#faqSection" class="link">FAQ</a>
+                </div>
+                <div id="swipablePad"></div>
+                <div class="leftNavOpenBtn"> 
+                    <span class="mobileMenu"><img src="./icons/menu.svg" alt=""></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="videoContainer">
+        <video autoplay muted loop id="videoBackground">
+            <source src="./media/Cheering crowd.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <video autoplay muted loop id="videoBackgroundMobile">
+            <source src="./media/Concert - 1630.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <div class="overlay">
+        <div class="data">
+            <h1>PopFest in the Castle</h1>
+            <p><img src="./icons/calendar.svg" class="icon">30.05.2022</p>
+            <p><img src="./icons/location-pin.svg" class="icon">Buda Castle</p>
+            <p><img src="./icons/information-circle-outline.svg" class="icon">19.03.2022</p>
+        </div>
+    </div>
+
+    <div class="schedule" id="concertSchedule" style="display: none;">
+        <div>
+            <span>17:00 Bilderbuch</span>
+            <span>18:00 Wanda</span>
+            <span>19:00 Christina Stürmer</span>
+            <span>20:00 Volbeat</span>
+            <span>21:00 Imagine Dragons</span>
+            <span>22:00 Opus</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="testimonials" id="testimonialsSection">
+        <div class="testiText">
+            The PopFest in the Castle Experience was nothing short of amazing.
+            The joy from the stage was infectious.
+            In all my years of booking concerts, none has caused a more emphatically enthusiastic response.
+            It was off the charts!
+            <div>Bill Deasy</div>
+        </div>
+
+        <div class="testiText">
+            Time stood still at last night's concert... Thanks so much! We had a fab time!
+            <div>Mark Lipman</div>
+        </div>
+
+        <div class="testiText">
+            Wow! Such a delightful fun evening last Saturday.
+            The bands were excellent and the programme perfect!
+            We’ll look forward to the next one.
+            <div>David Reaney</div>
+        </div>
+
+        <div class="testiText">
+            It’s a great music concert with a really nice crowd!
+            Brilliant atmosphere and lots of happy faces, well done on a great event!
+            <div>Leonie Handl</div>
+        </div>
+
+        <div class="testiText">    
+            Great music, great crowd, great atmosphere!
+            I'll be back next year!
+            <div>Elisa Haas</div>
+        </div>
+        
+
+        <div class="testiText">
+            Thanks again for another wonderful PopFest in the Castle! It really gets better every year.
+            It is the best music festival in the world and I am glad I am a part of it.
+            <div>Mona Steinbauer</div>
+        </div>
+
+        <div class="testiText">
+            I can’t overstate how much fun PopFest in the Castle was.
+            Friends, great music, scenery, late night party. Wow! So glad to be there!
+            <div>Christian Baumgartner</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2 style="text-align: center;" id="artistsSection">Artists</h2>
+
+    <div class="artists">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" style="background-image: url('./media/artists/bilderbuch.jpg'); background-size: cover;">
+                <h1>Bilderbuch</h1> 
+              </div>
+              <div class="flip-card-back">
+                <p>
+                    Bilderbuch is among the most successful Austrian rock bands and known for their Art Pop music.
+                    The band has released 6 albums.
+                    The two latest singles were released this year and are waiting to be performed in front of you!
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" style="background-image: url('./media/artists/wanda.jpg'); background-size: cover;">
+                <h1>Wanda</h1> 
+              </div>
+              <div class="flip-card-back">
+                <p>
+                    Wanda is an Austrian indie pop band founded in Vienna in 2012.
+                    Their indie pop style is influenced by rock 'n' roll, as well as Austropop.
+                    They label their music as "pop music with 'Amore'".
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" style="background-image: url('./media/artists/christina-sturmer.jpg'); background-size: cover;">
+                <h1>Christina Stürmer</h1> 
+              </div>
+              <div class="flip-card-back">
+                <p>
+                    Christina Stürmer is an Austrian singer and songwriter.
+                    With the release of her international debut album Schwarz Weiss, Stürmer became one of the biggest-selling Austrian artists to emerge in German-speaking Europe in the mid-2000s.
+                    Throughout a career spanning 15 years, Stürmer has sold over 2.0 million records.
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" style="background-image: url('./media/artists/volbeat.jpg'); background-size: cover;">
+                <h1>Volbeat</h1> 
+              </div>
+              <div class="flip-card-back">
+                <p>
+                    Volbeat are a Danish rock band formed in Copenhagen in 2001.
+                    They play a fusion of rock and roll, heavy metal and rockabilly.
+                    Their second album Rock the Rebel/Metal the Devil received platinum status, and their 2010 release Beyond Hell/Above Heaven was subject to widespread international critical acclaim, receiving double platinum in Denmark, platinum in Finland and Germany, and gold in the United States, Sweden and Austria.
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" style="background-image: url('./media/artists/imagine-dragons.webp'); background-size: cover;">
+                <h1>Imagine Dragons</h1> 
+              </div>
+              <div class="flip-card-back">
+                <p>
+                    Imagine Dragons is an American pop rock band from Las Vegas, Nevada.
+                    Imagine Dragons have sold 77.5 million certified singles in the US and 20 million albums worldwide.
+                    They were the most streamed group of 2018 on Spotify and are the first rock act to have four songs, "Radioactive", "Demons", "Believer" and "Thunder", to surpass one billion streams each.
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" style="background-image: url('./media/artists/opus.jpg'); background-size: cover;">
+                <h1>Opus</h1> 
+              </div>
+              <div class="flip-card-back">
+                <p>
+                    Opus is a pop-rock group from Graz, Austria.
+                    The band is chiefly known for its 1985 single release, "Live Is Life", which reached the Top 10 in several European countries.
+                    In August 2020, the band announced its planned breakup on December 21, 2021. On that day, there will be one last concert at the Graz Opera House.
+                </p> 
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="budacastleSection" id="budacastleSection1">
+        <h3>
+            The Buda Castle Palace is one of the main cultural and tourist centres of Budapest and the former royal palace. 
+            As part of the Buda Castle District, it has been a World Heritage Site of Budapest since 1987. 
+            The Palace Quarter provides an amazing atmospheric setting for the festival.
+        </h3>
+
+        <div class="imageSection">
+            <div>
+                <img src="./media/budacastle/1.jpg">
+            </div>
+            <div>
+                <img src="./media/budacastle/2.jpg">
+            </div>
+            <div>
+                <img src="./media/budacastle/3.jpg">
+            </div>
+            <div>
+                <img src="./media/budacastle/4.jpg">
+            </div>
+            <div>
+                <img src="./media/budacastle/5.jpg">
+            </div>
+            <div>
+                <img src="./media/budacastle/6.jpg">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <button id="purchaseTickets">Purchase tickets now</button>
+
+    <hr>
+
+    <div class="FAQ" id="faqSection">
+        <h2>Frequently asked questions (FAQs)</h2>
+
+        <p class="faqBlock">
+            <span class="faqTitle">What is PopFest in the Castle? <span class="faqButton">+</span></span>
+            <span class="faqAnswer">
+                PopFest in the Castle is a one-day music concert where many different artists perform their most popular songs.
+                It takes place once a year since 2015.
+            </span>
+        </p>
+
+        <p class="faqBlock">
+            <span class="faqTitle">When does PopFest in the Castle take place? <span class="faqButton">+</span></span>
+            <span class="faqAnswer">
+                On 05.30.2022.
+                The first act starts at 17:00.
+            </span>
+        </p>
+
+        <p class="faqBlock">
+            <span class="faqTitle">What is the age minimum? <span class="faqButton">+</span></span>
+            <span class="faqAnswer">
+                Persons under 16 years of age are not allowed to enter without the accompaniment of an adult.
+            </span>
+        </p>
+
+        <p class="faqBlock">
+            <span class="faqTitle">Can I pay by credit card? <span class="faqButton">+</span></span>
+            <span class="faqAnswer">
+                Yes, credit cards can be used at all food stands.
+            </span>
+        </p>
+
+        <p class="faqBlock">
+            <span class="faqTitle">What is the golden circle? <span class="faqButton">+</span></span>
+            <span class="faqAnswer">
+                In the Golden Circle, you experience your favorite act as close as possible.
+                It is located directly in front of the stage.
+                Show your Golden Circle ticket and you'll get to this area quickly and easily thanks to a separate entrance.
+            </span>
+        </p>
+
+        <p class="faqBlock">
+            <span class="faqTitle">Are there wheelchair spaces? <span class="faqButton">+</span></span>
+            <span class="faqAnswer">
+                Of course, wheelchair spaces are available.
+                However, spaces are limited. Please contact us in advance for more information.
+            </span>
+        </p>
+
+        <p class="faqBlock">
+            <span class="faqTitle">Can I resale my ticket if I cannot go? <span class="faqButton">+</span></span>
+            <span class="faqAnswer">
+                The resale of the tickets is prohibited.
+                For security reasons, we also strongly advise against buying the tickets from anyone.
+                Anyone who tries to gain access to the event with copied or forged tickets will be suspected of ticket misuse and prosecuted.
+            </span>
+        </p>
+    </div>
+
+    <footer>
+        <div id="facebookIcon">
+            <div class="hoverBackground"></div>
+            <div class="hoverBackgroundCircle"></div>
+            <i class="fab fa-facebook-f" class="socialMediaIcons"></i>
+        </div>
+        <div id="instagramIcon">
+            <div class="hoverBackground"></div>
+            <div class="hoverBackgroundCircle"></div>
+            <i class="fab fa-instagram" class="socialMediaIcons"></i>
+        </div>
+        <div id="pinterestIcon">
+            <div class="hoverBackground"></div>
+            <div class="hoverBackgroundCircle"></div>
+            <i class="fab fa-pinterest-p" class="socialMediaIcons"></i>
+        </div>
+        <div id="tumblrIcon">
+            <div class="hoverBackground"></div>
+            <div class="hoverBackgroundCircle"></div>
+            <i class="fab fa-tumblr" class="socialMediaIcons"></i>
+        </div>
+    </footer>
+
+    <script src="./js/SwiperMenu.js"></script>
+    <script>
+        /*-----------------Swipermenu------------------*/
+		var swiperem = new SwiperMenu("mySwiper");
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
